@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   skip_before_action :verify_authenticity_token
-  
+
   def index
     # ?numbers[]=1&numbers[]=2&numbers[]=3 pass array
     # user[id]=1&user[name]=Nathan     pass object
