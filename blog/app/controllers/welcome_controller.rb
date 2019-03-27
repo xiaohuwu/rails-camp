@@ -5,9 +5,12 @@ class WelcomeController < ApplicationController
     # ?numbers[]=1&numbers[]=2&numbers[]=3 pass array
     # user[id]=1&user[name]=Nathan     pass object
     # users[][id]=1&users[][name]=Nathan&users[][id]=2&users[][name]=Emma   Complex Objects
-    logger.info "[param]#{params[:numbers]}"
-    logger.info "[param]#{params[:user]}"
-    logger.info "[param]#{params[:users][0]}"
+    # logger.info "[param]#{params[:numbers]}"
+    # logger.info "[param]#{params[:user]}"
+    # logger.info "[param]#{params[:users][0]}"
+
+    HardWorker.perform_async(params[:name], params[:age])
+
   end
 
   def new
