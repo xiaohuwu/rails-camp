@@ -21,6 +21,7 @@ gem 'mini_magick'
 
 gem 'sidekiq', '>=3.5.1'
 
+gem 'mina', '0.3.7'
 
 
 
