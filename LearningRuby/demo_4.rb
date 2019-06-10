@@ -26,7 +26,7 @@ end
 print("\n")
 
 # collect map 会把处理过的结果返回 each 不会
-shuzu_collect = shuzu.map do |item|
+shuzu_collect = shuzu.collect do |item|
   item * 2
 end
 
