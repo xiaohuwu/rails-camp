@@ -25,5 +25,5 @@ end
 
 p a.inspect   # => "bar"
 
-a = 'foo'   # new object, new singleton class
+a = 'foo1'   # new object, new singleton class
 p a.inspect  # => "foo"
