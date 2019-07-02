@@ -33,10 +33,7 @@ class Song
     @artist = artist
     @duration = duration
   end
-
-
-
-
+  
   def title
     @title
   end
