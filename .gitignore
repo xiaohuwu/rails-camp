@@ -1,2 +1,10 @@
+*.DS_Store
+log
+log/**/*
+tmp/**/*
+bin/*
+.bundle/
+config/database.yml
+config/app_config.yml
 .idea
 LearningRuby/.idea/*

@@ -4,3 +4,11 @@ def reverse( str)
 end
 
 print reverse "hello world"
+
+
+ark = ['cat', 'dog', 'pig', 'goat']
+for animal in ark
+   puts animal
+end
+
+
