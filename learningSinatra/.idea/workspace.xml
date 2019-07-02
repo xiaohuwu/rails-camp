@@ -15,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/web_guesser/frank_says.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,7 +66,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="349" />
     <option name="y" value="36" />
     <option name="width" value="1544" />
@@ -177,12 +177,12 @@
       <workItem from="1551943184158" duration="3499000" />
       <workItem from="1552033093760" duration="391000" />
       <workItem from="1552618025304" duration="4325000" />
-      <workItem from="1561631827109" duration="135000" />
+      <workItem from="1561631827109" duration="633000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8350000" />
+    <option name="totallyTimeSpent" value="8848000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -194,7 +194,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="349" y="36" width="1544" height="959" extended-state="1" />
+    <frame x="349" y="36" width="1544" height="959" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23768309" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -287,7 +287,7 @@
     <entry file="file://$PROJECT_DIR$/web_guesser/frank_says.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
