@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
     # @current_user ||= User.find(session[:user_id]) if session
     if !cookies[:auth_token].nil? && !cookies[:auth_token].to_s.empty?
       # logger.info "comming in"
-      @current_user ||= User.find_by_auth_token!(cookies[:auth_token])
+      @current_user ||= User.find_by_auth_token!(cookies[:auth_token]) rescue nil
     end
 
   end

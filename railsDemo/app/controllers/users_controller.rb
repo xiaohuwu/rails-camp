@@ -26,9 +26,10 @@ class UsersController < ApplicationController
         cookies[:auth_token] = user.auth_token
       end
 
-
+      flash[:notice] = "登录成功！"
       redirect_to :root
     else
+      flash[:notice] = "用户名密码错误！"
       render 'login'
     end
   end
