@@ -10,7 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //= require jquery
+//= require bootstrap-sprockets
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+
+
+
+//= require fileupload/fileinput.js
+//= require fileupload/fileinput_locale_zh.js
+//= require fileupload/jquery.blueimp-gallery.min.js
 //= require_tree .
+
+
