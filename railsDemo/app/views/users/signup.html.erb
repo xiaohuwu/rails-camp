@@ -1,14 +1,4 @@
 
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.1/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-
     <%= form_for @user, :html => {:class => "form-horizontal bordered-group", :enctype => "multipart/form-data"} do |f| %>
 
       <div class="form-group">
@@ -44,7 +34,7 @@
   </div>
 
 
-  <div class="form-group form-file">
+  <div class="form-group">
     <label class="col-sm-3 control-label">添加照片</label>
     <div class="col-sm-6">
       <input id="file-0" name="files[]" type="file" multiple>
@@ -62,23 +52,9 @@
 
     $(function () {
         $("#file-0").fileinput({
-            uploadUrl: '#',
-            allowedFileTypes: ['image', 'video'],
-            allowedFileExtensions: ['jpg', 'png', 'gif'],
-            uploadAsync: false,
-            initialPreview: false,
-            maxFileCount: 100,
-            showBrowse: false,
-            previewFileType: "image",
-            browseOnZoneClick: true,
-            overwriteInitial: false,
-            maxFileSize: 1000,
-            showUpload: false,
-            maxFilesNum: 100,
-            showRemove: true,
-            showUpload: false,
-            removeClass: "btn btn-danger"
-        });
+            uploadUrl: '#'
+        })
+
     });
 
 
