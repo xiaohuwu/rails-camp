@@ -1,5 +1,5 @@
 GEM
-  remote: https://gems.ruby-china.com/
+  remote: http://mirrors.tuna.tsinghua.edu.cn/rubygems/
   specs:
     actioncable (5.2.3)
       actionpack (= 5.2.3)
@@ -106,7 +106,9 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (0.9.2)
-    mimemagic (0.3.3)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
@@ -237,7 +239,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.0p0
 
 BUNDLED WITH
    1.17.3
