@@ -5,7 +5,7 @@ development:
   encoding: utf8
   collation: utf8_unicode_ci
   reconnect: true
-  database: mybatis_db
+  database: newbee_mall_db_v2
   host: 127.0.0.1
   pool: 5
   username: root
