@@ -1,13 +1,11 @@
-
-
 development:
   adapter: mysql2
   encoding: utf8
   collation: utf8_unicode_ci
   reconnect: true
-  database: newbee_mall_db_v2
+  database: sg_security
   host: 127.0.0.1
   pool: 5
   username: root
-  password: "58613458"
+  password: "12345678"
 
