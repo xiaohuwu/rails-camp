@@ -1,2 +1,0 @@
-class GoodsCategory < ApplicationRecord
-end
