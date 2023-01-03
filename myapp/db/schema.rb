@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20230103140317) do
+ActiveRecord::Schema.define(version: 20230103143528) do
 
   create_table "addresses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
     t.integer  "user_id"
@@ -28,12 +28,26 @@ ActiveRecord::Schema.define(version: 20230103140317) do
     t.index ["parent_catalog_id"], name: "index_catalogs_on_parent_catalog_id", using: :btree
   end
 
+  create_table "employees", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "orders", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
     t.integer  "user_id"
     t.decimal  "amount",     precision: 8, scale: 2
     t.datetime "created_at",                         null: false
     t.datetime "updated_at",                         null: false
     t.index ["user_id"], name: "index_orders_on_user_id", using: :btree
+  end
+
+  create_table "pictures", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
+    t.bigint   "imageable_id"
+    t.string   "imageable_type"
+    t.string   "pic"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "post_authorings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
@@ -49,6 +63,12 @@ ActiveRecord::Schema.define(version: 20230103140317) do
     t.integer  "editor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
+    t.float    "price",      limit: 24
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
