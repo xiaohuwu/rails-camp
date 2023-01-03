@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20230103134715) do
+ActiveRecord::Schema.define(version: 20230103140317) do
 
   create_table "addresses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
     t.integer  "user_id"
@@ -34,6 +34,13 @@ ActiveRecord::Schema.define(version: 20230103134715) do
     t.datetime "created_at",                         null: false
     t.datetime "updated_at",                         null: false
     t.index ["user_id"], name: "index_orders_on_user_id", using: :btree
+  end
+
+  create_table "post_authorings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
+    t.integer  "authored_post_id"
+    t.integer  "post_author_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
   end
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3" do |t|
