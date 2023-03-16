@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+<<<<<<< HEAD
   # namespace :admin do
   #   resources :users
   # end
@@ -27,5 +28,16 @@ Rails.application.routes.draw do
 
   get ':controller(/:action(/:id))'
 
+=======
+  resource :profile
+
+  # resources :products do
+  #   resources :variants
+  # end
+
+  namespace :admin do
+    resources :articles
+  end
+>>>>>>> origin/master
 
 end
