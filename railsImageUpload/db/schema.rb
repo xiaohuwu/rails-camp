@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_07_07_103950) do
 
-  create_table "plants", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
+  create_table "plants", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci", force: :cascade do |t|
     t.string "name"
     t.string "scientific_name"
     t.text "description"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2019_07_07_103950) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci", force: :cascade do |t|
+  create_table "posts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci", force: :cascade do |t|
     t.string "title"
     t.text "body"
     t.string "picture"

@@ -12,6 +12,9 @@
   <div>
     <%= f.label :picture %>
     <%= f.file_field :picture %>
+    <% if @post.picture.url.present? %>
+         <img src="<%= @post.picture.url %>">
+    <% end  %>
   </div>
 
   <%= f.submit %>
